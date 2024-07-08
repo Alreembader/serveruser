@@ -5,9 +5,10 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const cors = require('cors');
 const app = express();
-const port = 3005;
+// const port = 3005;
 app.use(cors());
-//===========================
+const port = process.env.PORT || 5000;
+
 app.use(bodyParser.json());
 const swaggerOptions = {
     swaggerDefinition: {
