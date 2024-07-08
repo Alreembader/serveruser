@@ -16,11 +16,12 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "localhost:3005",
+        // host: "localhost:3005",
+        host: "alreem-app-a1759fa6576e.herokuapp.com",
         basePath: '/',
         schemes: ['http']
     },
-    servers: [{ url: `http://localhost:${port}` }],
+    servers: [{ url: `http://alreem-app-a1759fa6576e.herokuapp.com` }],
     apis: ['./server.js']
 };
 
@@ -203,6 +204,6 @@ app.delete('/api/users/:id', async(req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Swagger UI is available on http://localhost:${port}/api-ui`);
+    console.log(`Server is running on http://alreem-app-a1759fa6576e.herokuapp.com`);
+    console.log(`Swagger UI is available on http://alreem-app-a1759fa6576e.herokuapp.com/api-ui`);
 });
