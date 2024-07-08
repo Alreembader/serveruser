@@ -20,7 +20,7 @@ const swaggerOptions = {
         // host: "localhost:3005",
         host: "alreem-app-a1759fa6576e.herokuapp.com",
         basePath: '/',
-        schemes: ['http']
+        schemes: ['https']
     },
     servers: [{ url: `https://alreem-app-a1759fa6576e.herokuapp.com` }],
     apis: ['./server.js']
