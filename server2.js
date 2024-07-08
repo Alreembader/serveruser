@@ -8,8 +8,9 @@ const cors = require('cors');
 // const multer = require('multer');  //new
 // const path = require('path');  //new
 const app = express();
-const port = 3007;
+// const port = 3007;
 app.use(cors());
+const port = process.env.PORT || 6000;
 //===========================
 //new
 // const storage = multer.diskStorage({
@@ -33,11 +34,11 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "localhost:3007",
+        host: "alreem2-app-a1759fa6576e.herokuapp.com",
         basePath: '/',
-        schemes: ['http']
+        schemes: ['https']
     },
-    servers: [{ url: `http://localhost:${port}` }],
+    servers: [{ url: `https://alreem-app-a1759fa6576e.herokuapp.com` }],
     apis: ['./server2.js']
 };
 
@@ -247,6 +248,6 @@ app.get('/api/productbycat/:categoryId', async(req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Swagger UI is available on http://localhost:${port}/api-ui`);
+    console.log(`Server is running on https://alreem2-app-a1759fa6576e.herokuapp.com`);
+    console.log(`Swagger UI is available on https://alreem2-app-a1759fa6576e.herokuapp.com/api-ui`);
 });
