@@ -5,7 +5,7 @@ const config = {
     user: 'adminalreem',
     password: '97919895@Reem',
     server: 'serveruser.database.windows.net',
-    database: 'Shopping_DB', 
+    database: 'ShoppingDB2024', 
     options:{
         encrypt:true
     }
