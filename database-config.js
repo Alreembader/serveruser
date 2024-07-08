@@ -3,7 +3,7 @@ const sql = require("mssql")
 const { serve } = require("swagger-ui-express")
 const config = {
     user: 'adminalreem',
-    password: '97919895@Reen',
+    password: '97919895@Reem',
     server: 'serveruser.database.windows.net',
     database: 'Shopping_DB', 
     options:{
