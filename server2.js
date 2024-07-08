@@ -34,11 +34,11 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "alreem2-app-a1759fa6576e.herokuapp.com",
+        host: "alreem-app2-a1759fa6576e.herokuapp.com",
         basePath: '/',
         schemes: ['https']
     },
-    servers: [{ url: `https://alreem-app-a1759fa6576e.herokuapp.com` }],
+    servers: [{ url: `https://alreem-app2-a1759fa6576e.herokuapp.com` }],
     apis: ['./server2.js']
 };
 
@@ -248,6 +248,6 @@ app.get('/api/productbycat/:categoryId', async(req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on https://alreem2-app-a1759fa6576e.herokuapp.com`);
-    console.log(`Swagger UI is available on https://alreem2-app-a1759fa6576e.herokuapp.com/api-ui`);
+    console.log(`Server is running on https://alreem-app2-a1759fa6576e.herokuapp.com`);
+    console.log(`Swagger UI is available on https://alreem-app2-a1759fa6576e.herokuapp.com/api-ui`);
 });
